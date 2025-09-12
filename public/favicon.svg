@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Fond noir -->
+  <rect width="100" height="100" fill="#000000"/>
+  
+  <!-- Crâne stylisé -->
+  <g filter="url(#glow)">
+    <!-- Tête du crâne -->
+    <ellipse cx="50" cy="45" rx="25" ry="30" fill="#39FF14" opacity="0.9"/>
+    
+    <!-- Orbites -->
+    <ellipse cx="42" cy="40" rx="6" ry="8" fill="#000000"/>
+    <ellipse cx="58" cy="40" rx="6" ry="8" fill="#000000"/>
+    
+    <!-- Nez -->
+    <path d="M50 45 L45 50 L55 50 Z" fill="#000000"/>
+    
+    <!-- Mâchoire -->
+    <path d="M35 60 Q50 70 65 60 L60 75 Q50 80 40 75 Z" fill="#39FF14" opacity="0.9"/>
+    
+    <!-- Dents -->
+    <rect x="45" y="60" width="3" height="8" fill="#000000"/>
+    <rect x="50" y="60" width="3" height="8" fill="#000000"/>
+    <rect x="55" y="60" width="3" height="8" fill="#000000"/>
+    
+    <!-- Fissures décoratives -->
+    <path d="M30 35 Q35 40 30 45" stroke="#39FF14" stroke-width="1" fill="none" opacity="0.6"/>
+    <path d="M70 35 Q65 40 70 45" stroke="#39FF14" stroke-width="1" fill="none" opacity="0.6"/>
+  </g>
+</svg>
