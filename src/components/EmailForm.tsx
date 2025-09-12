@@ -94,10 +94,10 @@ const EmailForm: React.FC = () => {
     <div className="space-y-8">
       <div className="text-center space-y-3">
         <h3 className="text-2xl md:text-3xl font-bold text-neon-green glow-green">
-          REJOIGNEZ LE CERCLE DES INITIÉS
+          RÉSERVE TA PLACE PARMI LES VIVANTS
         </h3>
         <p className="text-gray-300 text-sm md:text-base max-w-md mx-auto">
-          Soyez parmi les premiers à découvrir cette expérience unique
+          Laisse ton email et sois le premier à entrer dans la légende
         </p>
       </div>
 
@@ -127,7 +127,7 @@ const EmailForm: React.FC = () => {
             <div className="flex items-center space-x-2">
               <div className="w-2 h-2 bg-neon-green rounded-full shadow-neon-green"></div>
               <label htmlFor="email" className="text-sm font-semibold text-neon-green tracking-wide uppercase">
-                Votre Adresse Email
+                Ton Email
               </label>
             </div>
             <div className="relative group">
@@ -144,7 +144,7 @@ const EmailForm: React.FC = () => {
                   }
                 }}
                 onBlur={() => validateEmail(email)}
-                placeholder="exemple@email.com"
+                placeholder="entre ton email…"
                 required
                 disabled={isSubmitting}
                 className={`relative w-full px-4 py-4 bg-black/60 border rounded-xl text-gray-100 placeholder-gray-500 focus:outline-none focus:ring-2 transition-all duration-300 font-normal disabled:opacity-50 text-base ${
@@ -185,7 +185,7 @@ const EmailForm: React.FC = () => {
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                     </svg>
-                    <span>JE REJOINS LA LISTE D'ATTENTE</span>
+                    <span>JE RÉSERVE MA PLACE</span>
                   </>
                 )}
               </div>

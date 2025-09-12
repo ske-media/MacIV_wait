@@ -1,9 +1,10 @@
 import SmokeVideoBackground from './components/SmokeVideoBackground';
 import Particles from './components/Particles';
 import HeroSection from './components/HeroSection';
+import CountdownText from './components/CountdownText';
+import Countdown from './components/Countdown';
 import InvitationSection from './components/InvitationSection';
 import IntroText from './components/IntroText';
-import Countdown from './components/Countdown';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Particles />
       <div className="relative z-10 min-h-screen flex flex-col items-center justify-center px-4 py-8 space-y-12">
         <HeroSection />
+        <CountdownText />
         <Countdown />
         <InvitationSection />
         <IntroText />
