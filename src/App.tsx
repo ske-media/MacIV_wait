@@ -13,9 +13,9 @@ function App() {
       <Particles />
       <div className="relative z-10 min-h-screen flex flex-col items-center justify-center px-4 py-8 space-y-12">
         <HeroSection />
+        <Countdown />
         <InvitationSection />
         <IntroText />
-        <Countdown />
       </div>
     </div>
   );
