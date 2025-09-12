@@ -159,37 +159,40 @@
   }
 }
 
-/* === EFFET DE FUMÉE VIDÉO === */
-.smoke-video-container {
+/* === ARRIÈRE-PLAN VIDÉO CINÉMATIQUE === */
+
+.video-background-container {
   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0; /* Place derrière le contenu mais devant le fond */
+  overflow: hidden;
+  background-color: #000; /* Fond noir si la vidéo ne charge pas */
+}
+
+.fullscreen-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Assure que la vidéo couvre tout l'écran sans se déformer */
+}
+
+.video-loading {
+  opacity: 0; /* Masque la vidéo pendant le chargement */
+  transition: opacity 0.5s ease-in-out;
+}
+
+.video-loaded {
+  opacity: 1; /* Affiche la vidéo une fois chargée */
+}
+
+.video-overlay {
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 0;
-  pointer-events: none;
-  overflow: hidden;
-}
-
-.smoke-video {
-  position: absolute;
-  width: 75vw;
-  height: 75vh;
-  max-width: 800px;
-  max-height: 800px;
-  object-fit: cover;
-  opacity: 0.7;
-  -webkit-mask-image: radial-gradient(ellipse 50% 50% at 50% 50%, #000 30%, transparent 70%);
-  mask-image: radial-gradient(ellipse 50% 50% at 50% 50%, #000 30%, transparent 70%);
-}
-
-.smoke-video.top-left {
-  top: -25%;
-  left: -25%;
-}
-
-.smoke-video.bottom-right {
-  bottom: -25%;
-  right: -25%;
-  transform: rotate(180deg);
+  background-color: rgba(0, 0, 0, 0.4); /* Calque noir avec 40% d'opacité */
+  z-index: 1; /* Se place par-dessus la vidéo mais sous le contenu */
 }

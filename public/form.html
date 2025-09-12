@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire Newsletter</title>
+</head>
+<body>
+    <!-- Formulaire caché pour que Netlify détecte le formulaire -->
+    <form name="newsletter-signup" netlify netlify-honeypot="bot-field" hidden>
+        <input type="email" name="email" />
+        <input type="hidden" name="form-name" value="newsletter-signup" />
+        <div style="display: none;">
+            <label>
+                Ne remplissez pas ce champ si vous êtes humain: 
+                <input name="bot-field" />
+            </label>
+        </div>
+    </form>
+</body>
+</html>

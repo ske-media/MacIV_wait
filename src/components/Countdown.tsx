@@ -15,9 +15,9 @@ const Countdown: React.FC = () => {
     seconds: 0
   });
 
-  // Compte à rebours vers le 1er novembre 2024 à 20:00 (Paris)
+  // Compte à rebours vers le 1er octobre 2025 à 20:00 (Paris)
   useEffect(() => {
-    const targetDate = new Date('2024-11-01T20:00:00+01:00').getTime();
+    const targetDate = new Date('2025-10-01T20:00:00+02:00').getTime();
 
     const timer = setInterval(() => {
       const now = new Date().getTime();
