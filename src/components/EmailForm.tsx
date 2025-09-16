@@ -213,7 +213,7 @@ const EmailForm: React.FC = () => {
                 </p>
               </div>
               <a 
-                href="https://instagram.com/limitless.horyzon" 
+                href="https://www.instagram.com/limitlesshoryzon/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center space-x-2 bg-gradient-to-r from-neon-green to-neon-green-bright text-black font-bold py-3 px-6 rounded-xl hover:from-neon-green-bright hover:to-neon-green transition-all duration-300 transform hover:scale-105 shadow-lg"

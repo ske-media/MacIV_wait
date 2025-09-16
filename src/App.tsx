@@ -12,12 +12,14 @@ function App() {
       <div className="absolute inset-0 bg-gradient-to-br from-stone-900/10 via-black to-stone-900/5"></div>
       <SmokeVideoBackground />
       <Particles />
-      <div className="relative z-10 min-h-screen flex flex-col items-center justify-center px-4 py-8 space-y-12">
+      <div className="relative z-10 min-h-screen flex flex-col items-center justify-center px-4 py-8">
         <HeroSection />
-        <CountdownText />
-        <Countdown />
-        <InvitationSection />
-        <IntroText />
+        <div className="space-y-12">
+          <CountdownText />
+          <Countdown />
+          <InvitationSection />
+          <IntroText />
+        </div>
       </div>
     </div>
   );
