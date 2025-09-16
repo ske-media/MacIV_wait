@@ -94,10 +94,10 @@ const EmailForm: React.FC = () => {
     <div className="space-y-8">
       <div className="text-center space-y-3">
         <h3 className="text-2xl md:text-3xl font-bold text-neon-green glow-green">
-          RÉSERVE TA PLACE PARMI LES VIVANTS
+          INSCRIS-TOI À LA LISTE D'ATTENTE
         </h3>
         <p className="text-gray-300 text-sm md:text-base max-w-md mx-auto">
-          Laisse ton email et sois le premier à entrer dans la légende
+          Sois le premier informé de l'ouverture de la billetterie
         </p>
       </div>
 
@@ -185,7 +185,7 @@ const EmailForm: React.FC = () => {
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                     </svg>
-                    <span>JE RÉSERVE MA PLACE</span>
+                    <span>M'INSCRIRE À LA LISTE D'ATTENTE</span>
                   </>
                 )}
               </div>
@@ -202,11 +202,11 @@ const EmailForm: React.FC = () => {
                 <div className="w-8 h-8 bg-neon-green/20 rounded-full flex items-center justify-center">
                   <Sparkles className="w-5 h-5" />
                 </div>
-                <p className="font-bold text-xl">Inscription confirmée</p>
+                <p className="font-bold text-xl">Inscription à la liste d'attente confirmée</p>
               </div>
               <div className="space-y-3">
                 <p className="text-gray-200 font-medium text-lg">
-                  Bienvenue dans l'attente. L'aventure commence bientôt...
+                  Tu es maintenant sur la liste d'attente. Tu seras le premier informé de l'ouverture de la billetterie.
                 </p>
                 <p className="text-gray-400 text-sm">
                   Restez connectés pour découvrir l'inconnu
